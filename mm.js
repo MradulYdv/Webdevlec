@@ -1,1 +1,0 @@
-alert("welcome in the world of mine ")
