@@ -1,0 +1,103 @@
+Index · HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mradul</title>
+ 
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+ 
+    body {
+      margin: 0;
+      padding: 2%;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ecedef;
+      color: #000;
+    }
+ 
+    h2 {
+      font-size: clamp(1.5rem, 3vw, 2.5rem);
+      font-weight: normal;
+      margin: 0 0 1rem 0;
+    }
+ 
+    /* The container holds the image and all the text positions */
+    .container {
+      position: relative;      /* makes the text positions relative to this box */
+      width: 100%;
+    }
+ 
+    /* Image always fills the container width and keeps its proportions */
+    .container img {
+      display: block;
+      width: 100%;
+      height: auto;
+      opacity: 0.5;            /* faded look like the example */
+    }
+ 
+    /* Shared style for every text label */
+    .label {
+      position: absolute;
+      margin: 0;
+      font-size: clamp(0.9rem, 2.2vw, 2rem);   /* scales with screen width */
+      color: #000;
+      white-space: nowrap;
+    }
+ 
+    .top-left {
+      top: 4%;
+      left: 2%;
+    }
+ 
+    .top-right {
+      top: 4%;
+      right: 2%;
+    }
+ 
+    .bottom-left {
+      bottom: 4%;
+      left: 2%;
+    }
+ 
+    .bottom-right {
+      bottom: 4%;
+      right: 2%;
+    }
+ 
+    .centered {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);   /* true centre at any size */
+    }
+ 
+    p.try {
+      font-size: clamp(0.9rem, 1.6vw, 1.2rem);
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+ 
+<body>
+ 
+  <h2>Example</h2>
+ 
+  <div class="container">
+    <!-- Replace this src with your own image file if you like, e.g. "photo.jpg" -->
+    <img src="image100.jpg" alt="Coastal village">
+ 
+    <p class="label top-left">Mradul</p>
+    <p class="label top-right">Mradul</p>
+    <p class="label bottom-left">Mradul</p>
+    <p class="label bottom-right">Mradul</p>
+    <p class="label centered">Mradul</p>
+  </div>
+ 
+
+ 
+</body>
+</html>
+ 
