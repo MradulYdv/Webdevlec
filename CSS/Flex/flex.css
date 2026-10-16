@@ -1,8 +1,9 @@
 .container {
    display: flex;
-  background-color: DodgerBlue;
-  flex-direction: column-reverse;
-  gap: 50px;
+   flex-wrap: wrap;
+   background-color: DodgerBlue;
+   flex-direction: row-reverse;
+   gap: 50px;
 }
 
 .container div {
