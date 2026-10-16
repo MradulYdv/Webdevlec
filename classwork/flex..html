@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <!-- External CSS Link karna MUST hai -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Student Registration</h2>
+    
+    <form action="#" method="POST">
+      <!-- Text Input -->
+      <div class="input-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+
+      <!-- Email Input -->
+      <div class="input-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+
+      <!-- Password Input -->
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password" required>
+      </div>
+
+      <!-- Radio Buttons -->
+      <div class="input-group">
+        <label>Gender</label>
+        <div class="radio-group">
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+        </div>
+      </div>
+
+      <!-- Dropdown Select -->
+      <div class="input-group">
+        <label for="course">Course</label>
+        <select id="course">
+          <option value="btech">B.Tech CSE</option>
+          <option value="it">B.Tech IT</option>
+          <option value="ece">B.Tech ECE</option>
+        </select>
+      </div>
+
+      <!-- Checkbox -->
+      <div class="checkbox-group">
+        <input type="checkbox" id="terms" required>
+        <label for="terms">I agree to terms and conditions</label>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn">Register Now</button>
+    </form>
+  </div>
+
+</body>
+</html>
